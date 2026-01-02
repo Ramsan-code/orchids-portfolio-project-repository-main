@@ -154,8 +154,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-emerald-500 flex items-center justify-center text-white font-bold">
-                  R
+                <div className="relative w-10 h-10 rounded-xl overflow-hidden">
+                  <Image
+                    src="/profile.jpg"
+                    alt="Ramsan"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <span className="font-bold text-xl text-white">Ramsan</span>
               </div>
