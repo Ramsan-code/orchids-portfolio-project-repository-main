@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     "Personal portfolio of Ramsan, a Full-Stack Developer specializing in MERN and Next.js, UI/UX design, and SaaS product development.",
 };
 
+import { Toaster } from "@/components/ui/sonner";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,6 +45,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
           <main>{children}</main>
+          <Toaster />
         </ThemeProvider>
         <VisualEditsMessenger />
       </body>
