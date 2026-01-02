@@ -1,0 +1,9 @@
+{
+  "projectId": "8894ab2e-bad8-49e9-a8f1-87fc7632a79a",
+  "createdAt": 1767334044237,
+  "version": "1.0",
+  "startupCommands": [
+    "bun install; bun run dev"
+  ]
+}
+// initial full project commit
