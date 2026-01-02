@@ -7,7 +7,20 @@ const technicalSkills = [
       </svg>
     ),
     color: 'indigo',
-    skills: ['HTML/CSS', 'JavaScript', 'React', 'Next.js', 'Node.js', 'Express.js', 'Python', 'MongoDB', 'RESTful APIs', 'Git/GitHub', 'AWS', 'Deployment'],
+    skills: [    'HTML/CSS',
+      'JavaScript',
+      'React',
+      'Next.js',
+      'Git/GitHub',
+      'Node.js',
+      'Express.js',
+      'Python',
+      'MongoDB',
+      'RESTful APIs',
+      'Security and Authentication Protocols',
+      'System Architecture and Design',
+      'Deployment',
+      'AWS',],
   },
   {
     category: 'UI/UX Design',
@@ -17,7 +30,7 @@ const technicalSkills = [
       </svg>
     ),
     color: 'pink',
-    skills: ['Figma', 'Adobe XD', 'Sketch', 'InVision', 'Miro', 'Balsamiq', 'Photoshop', 'Illustrator'],
+    skills: ['Figma', 'WordPress', 'Miro', 'Balsamiq', 'Mockflow', 'UXPin', 'Uizard', 'Adobe XD', 'Canva', 'Sketch', 'InVision', 'Visily','Lovable AI'],
   },
   {
     category: 'AI & Machine Learning',
@@ -27,7 +40,17 @@ const technicalSkills = [
       </svg>
     ),
     color: 'emerald',
-    skills: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'NumPy', 'Pandas', 'Scikit-Learn', 'NLP', 'Computer Vision'],
+    skills: [ 'Python Programming',
+      'OpenCV',
+      'NumPy',
+      'Pandas',
+      'Matplotlib',
+      'TensorFlow',
+      'Scikit-Learn',
+      'Keras',
+      'Natural Language Processing (NLP)',
+      'Computer Vision',
+      'Data Preprocessing & Visualization',],
   },
   {
     category: 'Tools & Platforms',
@@ -38,22 +61,57 @@ const technicalSkills = [
       </svg>
     ),
     color: 'cyan',
-    skills: ['Google Cloud', 'Google Colab', 'Cursor', 'VS Code', 'Microsoft Office', 'Google Workspace'],
+    skills: [    'Microsoft Word',
+      'Microsoft Excel',
+      'Microsoft PowerPoint',
+      'Google Docs',
+      'Google Sheets',
+      'Google Slides',
+      'Google Cloud',
+      'Google Antigravity',
+      'Google Colab',
+      'Google AI Studio',
+      'Google Stitch',
+      'Google Flow',
+      'Google DeepMind',
+      'Cursor',
+      'Orcids',],
   },
 ];
 
 const softSkills = [
-  'Communication', 'Problem Solving', 'Teamwork', 'Time Management', 'Adaptability',
-  'Critical Thinking', 'Creativity', 'Leadership', 'Learning Agility',
+    'Effective Communication',
+  'Presentation Techniques',
+  'Problem Solving',
+  'Teamwork & Collaboration',
+  'Learning Agility',
+  'Time Management',
+  'Adaptability',
+  'Critical Thinking',
+  'Creativity',
+  'Emotional Intelligence',
+  'Leadership',
 ];
 
 const businessSkills = [
-  'Competitor Analysis', 'Financial Projections', 'Marketing Strategy', 'Business Modeling',
-  'Pitch Deck Creation', 'Startup Fundamentals',
+   'Competitor Analysis',
+  'Financial Projections',
+  'Marketing Strategies',
+  'Startup Fundamentals',
+  'Pricing Strategy',
+  'Competitive Analysis',
+  'Business Modeling',
+  'Pitch Deck Creation',
 ];
 
-const hrSkills = [
-  'Team Building', 'Strategic Management', 'HR Administration', 'Labor Laws', 'KPIs & OKRs',
+const hrSkills = [ 'Team Building',
+  'Strategic Management',
+  'Digital HR Tools',
+  'Confidentiality & Ethics',
+  'Labor Laws & Employee Relations',
+  'HR Administration',
+  'Key Performance Indicators (KPIs) & OKRs',
+ 
 ];
 
 const colorMap: Record<string, { gradient: string; border: string }> = {
