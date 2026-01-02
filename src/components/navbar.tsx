@@ -19,22 +19,22 @@ export function Navbar() {
     <header
       className={`sticky top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#0a0a0f]/90 backdrop-blur-xl border-b border-white/5'
+          ? 'bg-[#0a0a0f]/80 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-indigo-500/10'
           : 'bg-transparent'
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="group flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-emerald-500 flex items-center justify-center text-white font-bold text-lg transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-emerald-500 flex items-center justify-center text-white font-bold text-lg transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg shadow-indigo-500/20">
               R
             </div>
-            <span className="font-bold text-xl text-white group-hover:text-indigo-400 transition-colors">
+            <span className="font-bold text-xl text-white group-hover:text-indigo-400 transition-colors tracking-tight">
               Ramsan
             </span>
           </Link>
 
-          <nav className="hidden md:flex gap-1 items-center bg-white/5 backdrop-blur-sm rounded-full px-2 py-2 border border-white/5">
+          <nav className="hidden md:flex gap-1 items-center bg-white/5 backdrop-blur-md rounded-full px-1.5 py-1.5 border border-white/10 shadow-inner">
             {[
               { href: '#me', label: 'About' },
               { href: '#education', label: 'Education' },
@@ -45,17 +45,18 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="relative px-4 py-2 text-zinc-400 hover:text-white transition-colors font-medium text-sm group"
+                className="relative px-5 py-2 text-zinc-300 hover:text-white transition-all duration-300 font-medium text-sm group"
               >
                 <span className="relative z-10">{item.label}</span>
-                <span className="absolute inset-0 bg-gradient-to-r from-indigo-500/20 to-emerald-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                <span className="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-emerald-500/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-indigo-500 rounded-full group-hover:w-4 transition-all duration-300" />
               </Link>
             ))}
           </nav>
 
           <a
             href="#contact"
-            className="hidden md:flex btn-primary px-5 py-2.5 rounded-full text-white font-medium text-sm hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300"
+            className="hidden md:flex btn-primary px-6 py-2.5 rounded-full text-white font-semibold text-sm hover:shadow-xl hover:shadow-indigo-500/30 transition-all duration-300 border border-white/10"
           >
             <span>Get in Touch</span>
           </a>
