@@ -35,8 +35,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       <p className="case-intro">{project.summary}</p>
       <div className="tags">{project.stack.map((item) => <span key={item}>{item}</span>)}</div>
       <div className="case-actions">
-        {project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noreferrer"><Github /> Source</a>}
-        {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noreferrer"><ExternalLink /> Live project</a>}
+        {project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noopener noreferrer"><Github /> Source</a>}
+        {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"><ExternalLink /> Live project</a>}
         {project.repositoryVisibility === "private" && <span>Private repository</span>}
       </div>
     </header>
