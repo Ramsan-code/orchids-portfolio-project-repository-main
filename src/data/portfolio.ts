@@ -111,10 +111,28 @@ export const projects: Project[] = [
 export const productProjects = projects.filter((project) => project.group === "product");
 export const clientProjects = projects.filter((project) => project.group === "client");
 
-export const selectedWork = [
+interface SelectedWork {
+  name: string;
+  categories: string[];
+  summary: string;
+  stack: string[];
+  image?: string;
+  githubUrl?: string;
+  liveUrl?: string;
+  repositoryVisibility?: "public" | "private";
+}
+
+export const selectedWork: SelectedWork[] = [
+  {
+    name: "Newborn Cinema",
+    categories: ["Internship", "Team project"],
+    summary: "The public website for Newborn Cinema, presenting the production house, its cinema services and team during my Web & Systems Developer internship.",
+    stack: [],
+    image: "/projects/new-born-cinema/cover.webp",
+    liveUrl: "https://newborncinema.com",
+  },
   { name: "Alpha LMS", categories: ["Full stack", "Education"], summary: "A multi-role learning platform with course workflows, protected dashboards and AI-assisted teaching tools.", stack: ["Next.js", "Express", "MongoDB", "JWT"], githubUrl: "https://github.com/Ramsan-code/Alpha-squad-frond-end", image: "/projects/alpha-lms/cover.webp" },
   { name: "AVS Real Estate", categories: ["Client work", "Frontend"], summary: "A responsive property website for real-estate and agricultural ventures in Northern Sri Lanka.", stack: ["Next.js", "TypeScript", "Tailwind CSS"], image: "/projects/avs-real-estate/cover.webp", githubUrl: "https://github.com/Ramsan-code/AVS-Real-Easte", liveUrl: "https://avs-real-easte.vercel.app" },
-  { name: "New Born Cinema Systems", categories: ["Internship", "Internal system"], summary: "Internal web and management systems developed during a four-month internship.", stack: ["Next.js", "React", "Tailwind CSS", "Node.js"], image: "/projects/new-born-cinema/cover.webp", repositoryVisibility: "private" as const },
 ];
 
 export const skillGroups = [
