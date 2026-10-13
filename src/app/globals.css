@@ -16,9 +16,9 @@
 
 /* Hero: optional intro video with play / sound controls */
 .portrait-frame video.portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-/* The reel has its own layout, so square off the arch, drop the photo tint and the badge that would cover it */
+/* The reel has its own layout, so square off the arch, drop the photo tint and the badges that would cover it */
 .portrait-frame.has-video{border-radius:4px;filter:none;border:1px solid var(--ink)}
-.hero-visual:has(.has-video) .location{display:none}
+.hero-visual:has(.has-video) .location,.hero-visual:has(.has-video) .stack-note{display:none}
 .video-controls{position:absolute;inset:auto 0 0;padding:14px;display:flex;align-items:flex-end;justify-content:flex-end;gap:10px;background:linear-gradient(transparent,rgb(13 17 14/.65));opacity:0;transition:opacity .2s}
 .portrait-frame.has-video:hover .video-controls,.video-controls:focus-within{opacity:1}
 @media(hover:none){.video-controls{opacity:1}}

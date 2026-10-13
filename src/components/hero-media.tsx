@@ -5,9 +5,9 @@ import { Pause, Play, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 type VideoSource = { src: string; type: string };
-type HeroMediaProps = { portrait: string; alt: string; sources?: readonly VideoSource[] | null; hasSound?: boolean };
+type HeroMediaProps = { portrait: string; alt: string; sources?: readonly VideoSource[] | null; poster?: string; hasSound?: boolean };
 
-export function HeroMedia({ portrait, alt, sources, hasSound = false }: HeroMediaProps) {
+export function HeroMedia({ portrait, alt, sources, poster, hasSound = false }: HeroMediaProps) {
   const frameRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoFailed, setVideoFailed] = useState(false);
@@ -59,7 +59,7 @@ export function HeroMedia({ portrait, alt, sources, hasSound = false }: HeroMedi
       <video
         ref={videoRef}
         className="portrait"
-        poster={portrait}
+        poster={poster ?? portrait}
         playsInline
         loop
         muted={muted}
