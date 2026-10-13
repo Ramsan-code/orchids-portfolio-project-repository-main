@@ -3,6 +3,7 @@
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { profile } from "@/data/profile";
 
 const links = [
   ["Work", "/#projects"],
@@ -41,7 +42,7 @@ export function Navbar() {
         <nav className="desktop-nav" aria-label="Primary navigation">
           {links.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
         </nav>
-        <a className="nav-cta" href="mailto:ramsandota@gmail.com">
+        <a className="nav-cta" href={`mailto:${profile.email}`}>
           Let&apos;s talk <span aria-hidden>↗</span>
         </a>
         <button
